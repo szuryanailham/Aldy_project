@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Humanist";
+  src: url("/assets/fonts/Humanist521BT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Humanist";
+}
+.background-image {
+  background-image: url("/assets/images/background.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  opacity: 1;
+  z-index: -1;
+}
+
+.display-block {
+  display: block;
+  width: 100%;
+}
