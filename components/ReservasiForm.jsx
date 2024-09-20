@@ -16,9 +16,9 @@ const ReservasiForm = () => {
       {/* Content Wrapper */}
       <div className="max-w-screen-lg h-fit mx-auto flex flex-col md:flex-row bg-[#031F28] shadow-lg rounded-lg p-10 gap-5">
         {/* Left Side */}
-        <div className="w-full md:w-1/2  my-auto">
-          <Image src={photo} className="mx-auto mb-5" />
-          <h1 className="w-[350px] text-[32px] leading-tight text-center mx-auto">“Abadikan setiap Moment berhargamu”</h1>
+        <div className="w-full md:w-1/2 my-auto mx-auto">
+          <Image src={photo} className="mx-auto mb-5" alt="Photo" />
+          <h1 className="w-full md:w-[279px] text-[32px] md:text-[20px] leading-tight text-center mx-auto">“Abadikan setiap Moment berhargamu”</h1>
         </div>
 
         {/* Right Side */}
