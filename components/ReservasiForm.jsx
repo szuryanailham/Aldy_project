@@ -78,7 +78,7 @@ const ReservasiForm = () => {
               </div>
               {/* Time */}
               <div className="relative w-1/2">
-                <input type="text" className="w-full px-10 py-3 bg-transparent text-white border border-[#D48319] rounded focus:outline-none" placeholder="Your Name" />
+                <input type="time" className="w-full px-10 py-3 bg-transparent text-white border border-[#D48319] rounded focus:outline-none" placeholder="Time" />
                 <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-[#D48319]">
                   {/* Icon here */}
                   <MdOutlineAccessTime className="text-[#D48319]" />
