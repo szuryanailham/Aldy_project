@@ -28,3 +28,7 @@ body {
   display: block;
   width: 100%;
 }
+
+.style_title {
+  @apply text-[35px] font-light md:text-[70px]  md:leading-none md:text-left text-center mx-auto leading-10;
+}

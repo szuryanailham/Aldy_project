@@ -18,17 +18,16 @@ const Category = () => {
   };
   return (
     <div className="mt-10 h-fit mb-10">
-      {/* Title */}
-      <h1
-        className="text-[30px] w-[205px] text-center mx-auto 
-      leading-10"
-      >
-        Category
-      </h1>
-      <div className="w-full flex justify-center">
-        <p className=" w-[250px] text-md mt-5 text-center">{categoryDesc}</p>
+      <div className="flex flex-col items-center">
+        {/* Title */}
+        <h1 className="w-[205px] style_title">Category</h1>
+
+        <div className="w-full flex justify-center p-2">
+          {/* Description */}
+          <p className="w-[250px] md:w-[599px] text-md md:text-[22px] mt-5 md:mt-10 text-center  mx-auto font-light">{categoryDesc}</p>
+        </div>
       </div>
-      {/* Description */}
+
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -43,7 +42,7 @@ const Category = () => {
         }}
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
-        className="mySwiper mt-5"
+        className="mySwiper md:w-[700px]  md:h-[500px] mt-5"
       >
         <SwiperSlide className="p-10 md:p-0">
           <ItemImage src="https://swiperjs.com/demos/images/nature-1.jpg" alt="Gambar Alam 1" />

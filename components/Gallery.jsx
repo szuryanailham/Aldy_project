@@ -9,15 +9,15 @@ const Gallery = () => {
     return `https://picsum.photos/seed/${i + 1}/${width}/${height}`;
   });
   return (
-    <section>
-      <h1
-        className="text-[30px] w-[205px] text-center mx-auto 
-      leading-10"
-      >
-        My Gallery
-      </h1>
-      <div className="w-full flex justify-center mb-5">
-        <p className=" w-[250px] text-md mt-5 text-center">{GalleryDesc}</p>
+    <section className="mx-auto">
+      <div className="flex flex-col md:flex-row items-center justify-center p-5">
+        {/* Title */}
+        <h1 className="w-[205px] style_title">Category</h1>
+
+        <div className="w-full flex justify-end">
+          {/* Description */}
+          <p className="w-[250px] md:w-[599px] text-md md:text-[22px] mt-5 md:mt-10 text-center md:text-right mx-auto font-light">{GalleryDesc}</p>
+        </div>
       </div>
       <div id="photos">
         <div className="columns-2 gap-4 sm:columns-3 p-2">

@@ -6,7 +6,7 @@ export default function RootLayout({ children }) {
       <body className="bg-BackgroundColor text-white font-Humanist">
         <main className="">
           <Nav />
-          <div className="pt-20 md:px-20 md:pt-0 text-white z-2">{children}</div>
+          <div className="pt-12 md:px-20 md:pt-0 text-white z-2">{children}</div>
         </main>
       </body>
     </html>

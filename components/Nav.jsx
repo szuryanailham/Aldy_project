@@ -26,7 +26,11 @@ const Nav = () => {
                 </Link>
               </li>
             ))}
-            <li>Whatsapp</li>
+            <li>
+              <Link href="">
+                <FaWhatsapp className="text-2xl text-SecondColor" />
+              </Link>
+            </li>
           </ul>
           {/* BURGER MENU  */}
           <div

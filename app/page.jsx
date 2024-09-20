@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
 import Offer from "@/components/Offer";
+import ReservasiForm from "@/components/ReservasiForm";
 Gallery;
 import React from "react";
 const page = () => {
@@ -13,6 +14,7 @@ const page = () => {
       <About />
       <Category />
       <Gallery />
+      <ReservasiForm />
       <Offer />
       <Footer />
     </section>
