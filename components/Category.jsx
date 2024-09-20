@@ -17,7 +17,7 @@ const Category = () => {
     );
   };
   return (
-    <div className="mt-10 h-fit mb-10">
+    <section id="Category" className="mt-10 h-fit mb-10">
       <div className="flex flex-col items-center">
         {/* Title */}
         <h1 className="w-[205px] style_title">Category</h1>
@@ -60,7 +60,7 @@ const Category = () => {
           <ItemImage src="https://swiperjs.com/demos/images/nature-4.jpg" alt="Gambar Alam 1" />
         </SwiperSlide>
       </Swiper>
-    </div>
+    </section>
   );
 };
 

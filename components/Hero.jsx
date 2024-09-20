@@ -4,7 +4,7 @@ import profile from "@/public/assets/images/profile.svg";
 import { subTitle, Title } from "./constants";
 const Hero = () => {
   return (
-    <section className="h-sreen">
+    <section id="Home" className="h-sreen">
       <div className="background-image z-1"></div>
       <div></div>
       <h3 className="text-SecondColor text-center md:text-end mt-3 mb-7 md:text-[24px]">#Best Photographer in Surakarta</h3>

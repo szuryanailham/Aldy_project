@@ -7,10 +7,10 @@ const Footer = () => {
   return (
     <div className="w-full p-5 flex flex-col md:flex-row justify-between items-center">
       <h1 className="text-center text-md ">
-        Created by
-        <Link className="text-[#D48319]" href="">
+        Created by{" "}
+        <a target="_blank" rel="noopener noreferrer" className="text-[#D48319]" href="https://www.ilhamsuryana.my.id/">
           szuryanilham
-        </Link>
+        </a>
       </h1>
 
       <div className="mt-5 md:mt-0">

@@ -9,12 +9,12 @@ import { FaLocationDot } from "react-icons/fa6";
 import Link from "next/link";
 const ReservasiForm = () => {
   return (
-    <section className="w-full h-fit mt-5">
+    <section id="Reservasi" className="w-full h-fit mt-5">
       {/* Title */}
-      <h1 className="w-full  text-center mx-auto text-[35px] font-light md:text-[70px] md:leading-none p-5">Reservasi Form</h1>
+      <h1 className="w-full text-center mx-auto text-[35px] font-light md:text-[70px] md:leading-none p-5">Reservasi Form</h1>
 
       {/* Content Wrapper */}
-      <div className="max-w-screen-lg h-fit mx-auto flex flex-col md:flex-row bg-[#031F28] shadow-lg rounded-lg p-10 gap-5">
+      <div className="max-w-screen-lg w-full h-fit mx-auto flex flex-col md:flex-row bg-[#031F28] shadow-lg rounded-lg p-10 gap-5">
         {/* Left Side */}
         <div className="w-full md:w-1/2 my-auto mx-auto">
           <Image src={photo} className="mx-auto mb-5" alt="Photo" />
@@ -66,7 +66,7 @@ const ReservasiForm = () => {
             </div>
 
             {/* Date and time*/}
-            <div className="flex gap-4 mt-5">
+            <div className=" w-full flex gap-4 mt-5">
               {/* date */}
 
               <div className="relative w-1/2">

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { navLinks } from "./constants";
 import { IoMdClose } from "react-icons/io";
 import { MdMenu } from "react-icons/md";
-import { FaInstagram, FaPinterest, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaPinterest, FaWhatsapp, FaTiktok } from "react-icons/fa";
 import { useRef, useState } from "react";
 const Nav = () => {
   const [isActive, setIsActive] = useState(false);
@@ -21,15 +21,15 @@ const Nav = () => {
           <ul className="hidden md:flex flex-row justify-center space-x-12 p-3">
             {navLinks.map((item, id) => (
               <li key={id}>
-                <Link href="" className="cursor-pointer">
+                <Link href={item.id} className="cursor-pointer">
                   {item.title}
                 </Link>
               </li>
             ))}
             <li>
-              <Link href="">
+              <a target="_blank" rel="noopener noreferrer" href="">
                 <FaWhatsapp className="text-2xl text-SecondColor" />
-              </Link>
+              </a>
             </li>
           </ul>
           {/* BURGER MENU  */}
@@ -52,22 +52,22 @@ const Nav = () => {
         <ul className=" px-6 mt-3 divide-y divide-slate-200">
           {navLinks.map((item, id) => (
             <li key={id} className="py-5">
-              <Link href="" smooth={true} duration={500} onClick={() => setIsActive(false)} className="hover:text-blue-500 cursor-pointer">
+              <Link href={item.id} smooth={true} duration={500} onClick={() => setIsActive(false)} className="hover:text-blue-500 cursor-pointer">
                 {item.title}
               </Link>
             </li>
           ))}
 
-          <li className="py-5 flex gap-5">
-            <Link href="http://pinterest.com/farikhdesign_">
-              <FaPinterest />
-            </Link>
-            <Link href="http://instagram.com/farikhah025">
+          <li target="_blank" rel="noopener noreferrer" className="py-5 flex gap-5">
+            <a href="http://pinterest.com/farikhdesign_">
+              <FaTiktok />
+            </a>
+            <a target="_blank" rel="noopener noreferrer" href="http://instagram.com/farikhah025">
               <FaInstagram />
-            </Link>
-            <Link href="Link">
+            </a>
+            <a target="_blank" rel="noopener noreferrer" href="Link">
               <FaWhatsapp />
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

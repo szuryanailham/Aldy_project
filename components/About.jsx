@@ -6,11 +6,10 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaGoogleDrive } from "react-icons/fa";
-import Link from "next/link";
 
 const About = () => {
   return (
-    <section className=" w-full mt-10 flex flex-col justify-center">
+    <section id="About" className=" w-full mt-10 flex flex-col justify-center">
       {/* Title */}
       <h1
         className="style_title w-[250px] md:w-[500px] text-center md:text-left 
@@ -29,22 +28,22 @@ const About = () => {
           {/* social media */}
           <div className=" w-fit md:w-full flex flex-row mx-auto gap-5 mt-10">
             {/* instagram */}
-            <Link href="asasa">
+            <a href="asasa" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="text-2xl" />
-            </Link>
+            </a>
             {/* Tiktok */}
-            <Link href="asasa">
+            <a href="asasa" target="_blank" rel="noopener noreferrer">
               <FaTiktok className="text-2xl" />
-            </Link>
+            </a>
             {/* Facebook */}
 
             {/* Facebook */}
-            <Link href="asasa">
+            <a href="asasa" target="_blank" rel="noopener noreferrer">
               <FaFacebookF className="text-2xl" />
-            </Link>
-            <Link href="asasa">
+            </a>
+            <a href="asasa" target="_blank" rel="noopener noreferrer">
               <FaGoogleDrive className="text-2xl" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>
