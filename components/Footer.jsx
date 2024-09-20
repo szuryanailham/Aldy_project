@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="w-full p-5 flex flex-col md:flex-row justify-between items-center">
       <h1 className="text-center text-md ">
-        copyright@
+        Created by
         <Link className="text-[#D48319]" href="">
           szuryanilham
         </Link>
