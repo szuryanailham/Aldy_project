@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import profile from "@/public/assets/images/profile.svg";
+import profile from "@/public/assets/images/profile.webp";
 import { subTitle, Title } from "./constants";
 const Hero = () => {
   return (
