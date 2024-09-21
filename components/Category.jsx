@@ -4,14 +4,42 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper/modules";
-import { categoryDesc } from "./constants";
+import { category1, category2, category3, category4, category5, categoryDesc } from "./constants";
+
 const Category = () => {
+  const categories = [
+    {
+      id: "1",
+      title: "Wisudda",
+      image: "/assets/images/category/category_1.webp",
+    },
+    {
+      id: "2",
+      title: "Personal",
+      image: "/assets/images/category/category_2.webp",
+    },
+    {
+      id: "3",
+      title: "Wedding",
+      image: "/assets/images/category/category_3.webp",
+    },
+    {
+      id: "4",
+      title: "Event",
+      image: "/assets/images/category/category_4.webp",
+    },
+    {
+      id: "5",
+      title: "Product",
+      image: "/assets/images/category/category_5.webp",
+    },
+  ];
   const ItemImage = ({ src, alt }) => {
     return (
       <div className="relative group">
-        <img src={src} alt={alt} className="rounded-lg" />
+        <img src={src} alt={alt} className="rounded-lg w-full h-fit bg-cover bg-center" />
         <div className="absolute inset-0 bg-gray-900 opacity-0 transition-opacity group-hover:opacity-80 flex items-center justify-center">
-          <p className="text-white text-lg">Teks yang Muncul saat Hover</p>
+          <p className="text-white text-lg">{alt}</p>
         </div>
       </div>
     );
@@ -42,23 +70,13 @@ const Category = () => {
         }}
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
-        className="mySwiper md:w-[700px]  md:h-[500px] mt-5 "
+        className="mySwiper md:w-[700px] md:h-[500px] mt-5"
       >
-        <SwiperSlide className="p-10 md:p-0">
-          <ItemImage src="https://swiperjs.com/demos/images/nature-1.jpg" alt="Gambar Alam 1" />
-        </SwiperSlide>
-        <SwiperSlide className="p-10 md:p-0">
-          <ItemImage src="https://swiperjs.com/demos/images/nature-2.jpg" alt="Gambar Alam 1" />
-        </SwiperSlide>
-        <SwiperSlide className="p-10 md:p-0">
-          <ItemImage src="https://swiperjs.com/demos/images/nature-2.jpg" alt="Gambar Alam 1" />
-        </SwiperSlide>
-        <SwiperSlide className="p-10 md:p-0">
-          <ItemImage src="https://swiperjs.com/demos/images/nature-3.jpg" alt="Gambar Alam 1" />
-        </SwiperSlide>
-        <SwiperSlide className="p-10 md:p-0">
-          <ItemImage src="https://swiperjs.com/demos/images/nature-4.jpg" alt="Gambar Alam 1" />
-        </SwiperSlide>
+        {categories.map((category) => (
+          <SwiperSlide key={category.id} className="p-10 md:p-0 flex justify-center">
+            <ItemImage src={category.image} alt={category.title} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </section>
   );

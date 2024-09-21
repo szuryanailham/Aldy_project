@@ -1,5 +1,5 @@
 import React from "react";
-import about_image from "@/public/assets/images/about.svg";
+import about_image from "@/public/assets/images/about.webp";
 import Image from "next/image";
 import { aboutDesc, LinkWhatshapp } from "./constants";
 import { FaInstagram } from "react-icons/fa6";
@@ -17,7 +17,7 @@ const About = () => {
       </h1>
       <div className="flex flex-col md:flex-row-reverse ">
         {/* IMages */}
-        <Image src={about_image} alt="About Section" className="mx-auto mb-5 w-[237px] h-[277px] md:w-[328px] md:h-[384px]" />
+        <Image src={about_image} alt="About Section" className="mx-auto mb-5 w-[200px] h-[300px] md:w-[300px] md:h-[384px]" />
         <div>
           {/* About Description */}
           <div className="w-full flex justify-center md:justify-start">
