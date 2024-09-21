@@ -1,11 +1,9 @@
 import React from "react";
 import about_image from "@/public/assets/images/about.svg";
 import Image from "next/image";
-import { aboutDesc } from "./constants";
+import { aboutDesc, LinkWhatshapp } from "./constants";
 import { FaInstagram } from "react-icons/fa6";
-import { FaTiktok } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-import { FaGoogleDrive } from "react-icons/fa";
+import { FaGoogleDrive, FaWhatsapp } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -28,21 +26,14 @@ const About = () => {
           {/* social media */}
           <div className=" w-fit md:w-full flex flex-row mx-auto gap-5 mt-10">
             {/* instagram */}
-            <a href="asasa" target="_blank" rel="noopener noreferrer">
+            <a href="text-[#D48319]" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="text-2xl" />
             </a>
-            {/* Tiktok */}
-            <a href="asasa" target="_blank" rel="noopener noreferrer">
-              <FaTiktok className="text-2xl" />
-            </a>
-            {/* Facebook */}
-
-            {/* Facebook */}
-            <a href="asasa" target="_blank" rel="noopener noreferrer">
-              <FaFacebookF className="text-2xl" />
-            </a>
-            <a href="asasa" target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/drive/folders/1ViB5BQhKZrQy0ipf6oO-cVBO5nv2knmA" target="_blank" rel="noopener noreferrer">
               <FaGoogleDrive className="text-2xl" />
+            </a>
+            <a href={LinkWhatshapp} target="_blank" rel="noopener noreferrer">
+              <FaWhatsapp className="text-2xl" />
             </a>
           </div>
         </div>

@@ -7,8 +7,10 @@ module.exports = {
         Humanist: ["Humanist", "sans-serif"],
       },
       colors: {
-        BackgroundColor: "#002733",
-        SecondColor: "#D48319",
+        BackgroundColor: "#2C320D",
+        SecondColor: "#929A68",
+        titleColor: "#A9AF8B",
+        textColor: "#929A68",
       },
     },
   },

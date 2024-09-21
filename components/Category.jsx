@@ -42,7 +42,7 @@ const Category = () => {
         }}
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
-        className="mySwiper md:w-[700px]  md:h-[500px] mt-5"
+        className="mySwiper md:w-[700px]  md:h-[500px] mt-5 "
       >
         <SwiperSlide className="p-10 md:p-0">
           <ItemImage src="https://swiperjs.com/demos/images/nature-1.jpg" alt="Gambar Alam 1" />
