@@ -26,7 +26,7 @@ const About = () => {
           {/* social media */}
           <div className=" w-fit md:w-full flex flex-row mx-auto gap-5 mt-10">
             {/* instagram */}
-            <a href="text-[#D48319]" target="_blank" rel="noopener noreferrer">
+            <a href="http://instagram.com/aldiwald" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="text-2xl" />
             </a>
             <a href="https://drive.google.com/drive/folders/1ViB5BQhKZrQy0ipf6oO-cVBO5nv2knmA" target="_blank" rel="noopener noreferrer">
