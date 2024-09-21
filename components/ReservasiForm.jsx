@@ -7,6 +7,7 @@ import { MdDateRange } from "react-icons/md";
 import { MdOutlineAccessTime } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import Link from "next/link";
+import { LinkWhatshapp } from "./constants";
 const ReservasiForm = () => {
   return (
     <section id="Reservasi" className="w-full h-fit mt-5">
@@ -97,9 +98,9 @@ const ReservasiForm = () => {
             <div className="flex justify-between mt-5">
               <p>
                 Atau hubungi{" "}
-                <Link href="asas" className="text-[#D48319]">
+                <a href={LinkWhatshapp} className="text-[#D48319]">
                   Whatsapp
-                </Link>
+                </a>
               </p>
               <button type="button" className="text-white bg-SecondColor font-medium rounded-lg text-sm px-5 py-2.5 mx-2 mb-2">
                 Kirim

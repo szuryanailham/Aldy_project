@@ -1,6 +1,8 @@
 import React from "react";
 import { FaInstagram } from "react-icons/fa6";
 import { FaTiktok, FaWhatsapp } from "react-icons/fa";
+import { LinkWhatshapp } from "./constants";
+LinkWhatshapp;
 const Footer = () => {
   return (
     <div className="w-full p-5 flex flex-col md:flex-row justify-between items-center">
@@ -22,11 +24,7 @@ const Footer = () => {
             <FaTiktok className="text-lg md:text-xl" />
           </a>
           {/* Whatsapp */}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://wa.me/6285853438903?text=Halo%21%20%F0%9F%91%8B%20Saya%20tertarik%20dengan%20jasa%20pembuatan%20website%20yang%20Anda%20tawarkan.%20%F0%9F%92%BB%20Apakah%20saya%20bisa%20mendapatkan%20informasi%20lebih%20lanjut%3F%20Saya%20ingin%20mendiskusikan%20kebutuhan%20dan%20konsep%20website%20yang%20ingin%20saya%20buat.%20Terima%20kasih%21%20%F0%9F%98%8A"
-          >
+          <a target="_blank" rel="noopener noreferrer" href={LinkWhatshapp}>
             <FaWhatsapp className="text-lg md:text-xl" />
           </a>
         </div>
